@@ -4,10 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="./css/bootstrap.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="./css/all.min.css" />
-    <link rel="stylesheet" href="./css/styles.css" />
-    <title>Master</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/all.min.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <title>Summery Test</title>
   </head>
 
   <body>
@@ -29,7 +29,7 @@
         </div>
         <div class="list-group list-group-flush my-3">
           <a
-            href="./index.html"
+            href="../index.html"
             class="
               list-group-item list-group-item-action
               bg-transparent
@@ -39,7 +39,7 @@
             >Test Name</a
           >
           <a
-            href="./mstr/summaryTest.html"
+            href="./summaryTest.html"
             class="
               list-group-item list-group-item-action
               bg-transparent
@@ -49,7 +49,7 @@
             >Summery Test Name</a
           >
           <a
-            href="./mstr/clientClinic.html"
+            href="./clientClinic.html"
             class="
               list-group-item list-group-item-action
               bg-transparent
@@ -59,7 +59,7 @@
             >Client Clinic Details</a
           >
           <a
-            href="./mstr/doctor.html"
+            href="./doctor.html"
             class="
               list-group-item list-group-item-action
               bg-transparent
@@ -156,21 +156,21 @@
                   <a
                     class="nav-link fs-6 text-wrap bg-warning me-2 rounded-3"
                     aria-current="page"
-                    href="./index.html"
+                    href="../index.html"
                     ><i class="fas fa-brain me-2"></i>Master</a
                   >
                 </li>
                 <li class="nav-item mb-1">
                   <a
                     class="nav-link fs-6 text-wrap bg-warning me-2 rounded-3"
-                    href="./process.html"
+                    href="../process.html"
                     ><i class="fas fa-procedures me-2"></i>Process</a
                   >
                 </li>
                 <li class="nav-item mb-1">
                   <a
                     class="nav-link fs-6 text-wrap bg-warning me-2 rounded-3"
-                    href="./report.html"
+                    href="../report.html"
                     ><i class="fas fa-file-medical me-2"></i>Report</a
                   >
                 </li>
@@ -197,46 +197,60 @@
               align-items-center
             "
           >
-            <h4>Test Name</h4>
+            <h4>Summary Test</h4>
             <form class="bgform row g-3 p-2 rounded">
               <div class="col-md-6">
-                <label for="testId" class="form-label">Test Id</label>
-                <input type="text" class="form-control" id="testId" />
+                <label for="SummarytestId" class="form-label">Summary Test Id</label>
+                <input type="text" class="form-control" id="SummarytestId" />
               </div>
               <div class="col-md-6">
                 <label for="Date" class="form-label">Date</label>
                 <input type="date" class="form-control" id="Date" />
               </div>
               <div class="col-md-6">
-                <label for="testHead" class="form-label">Test Head Name</label>
+                <label for="summarytestHead" class="form-label">Summary Test Head Name</label>
                 <select
-                  id="testHead"
+                  id="summarytestHead"
                   class="form-select form-select mb-3"
                   aria-label=".form-select example"
                 >
-                  <option selected>Open</option>
+                  <option selected>Summary</option>
                   <option value="1">One</option>
                   <option value="2">Two</option>
                   <option value="3">Three</option>
                 </select>
               </div>
               <div class="col-md-6">
-                <label for="nameOfTest" class="form-label"
-                  >Name of the Test</label
+                <label for="summaryTestName" class="form-label"
+                  >Summary Test Name</label
                 >
-                <input type="text" class="form-control" id="nameOfTest" />
+                <input type="text" class="form-control" id="summaryTestName" />
               </div>
-              <div class="col-md-4">
-                <label for="minValue" class="form-label">Minimum Value</label>
-                <input type="text" class="form-control" id="minValue" />
+              <div class="col-md-6">
+                <label for="summaryValue" class="form-label">Value</label>
+                <select
+                  id="summaryValue"
+                  class="form-select form-select mb-3"
+                  aria-label=".form-select example"
+                >
+                  <option selected>Value</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
               </div>
-              <div class="col-md-4">
-                <label for="maxValue" class="form-label">Maximum Value</label>
-                <input type="text" class="form-control" id="maxValue" />
-              </div>
-              <div class="col-md-4">
-                <label for="normalValue" class="form-label">Normal Value</label>
-                <input type="text" class="form-control" id="normalValue" />
+              <div class="col-md-6">
+                <label for="summaryDescription" class="form-label">Description</label>
+                <select
+                  id="summaryDescription"
+                  class="form-select form-select mb-3"
+                  aria-label=".form-select example"
+                >
+                  <option selected>Description</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
               </div>
               <div class="col-md-12">
                 <label for="reMarks" class="form-label">Remarks</label>
@@ -341,8 +355,8 @@
     </div>
     <!-- /#page-content-wrapper -->
 
-    <script src="./js/bootstrap.bundle.min.js"></script>
-    <script src="./js/all.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/all.js"></script>
     <script>
       var el = document.getElementById("wrapper");
       var toggleButton = document.getElementById("menu-toggle");
