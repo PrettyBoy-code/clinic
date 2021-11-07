@@ -4,10 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="./css/bootstrap.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="./css/all.min.css" />
-    <link rel="stylesheet" href="./css/styles.css" />
-    <title>Master</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/all.min.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <title>Process</title>
   </head>
 
   <body>
@@ -25,99 +25,52 @@
             border-bottom
           "
         >
-          Master
+          Process
         </div>
         <div class="list-group list-group-flush my-3">
           <a
-            href="./index.html"
+            href="./test.html"
             class="
               list-group-item list-group-item-action
               bg-transparent
               second-text
               fw-bold
             "
-            >Test Name</a
+            >Test Entry</a
           >
           <a
-            href="./mstr/summaryTest.html"
+            href="#"
             class="
               list-group-item list-group-item-action
               bg-transparent
               second-text
               fw-bold
             "
-            >Summery Test Name</a
+            >Outlet lab Test</a
           >
-          <a
-            href="./mstr/clientClinic.html"
+          <div
             class="
               list-group-item list-group-item-action
               bg-transparent
               second-text
               fw-bold
+              dropdown
             "
-            >Client Clinic Details</a
           >
-          <a
-            href="./mstr/doctor.html"
-            class="
-              list-group-item list-group-item-action
-              bg-transparent
-              second-text
-              fw-bold
-            "
-            >Doctor Details</a
-          >
-          <a
-            href="./mstr/priceDetails.html"
-            class="
-              list-group-item list-group-item-action
-              bg-transparent
-              second-text
-              fw-bold
-            "
-            >Price Details</a
-          >
-          <a
-            href="./mstr/outletLab.html"
-            class="
-              list-group-item list-group-item-action
-              bg-transparent
-              second-text
-              fw-bold
-            "
-            >Outlet Lab Details</a
-          >
-          <a
-            href="./mstr/employeeDetails.html"
-            class="
-              list-group-item list-group-item-action
-              bg-transparent
-              second-text
-              fw-bold
-            "
-            >Employee Details</a
-          >
-          <a
-            href="./mstr/bankDetails.html"
-            class="
-              list-group-item list-group-item-action
-              bg-transparent
-              second-text
-              fw-bold
-            "
-            >Bank Details</a
-          >
-          <a
-            href="./mstr/expense.html"
-            class="
-              list-group-item list-group-item-action
-              bg-transparent
-              second-text
-              fw-bold
-            "
-            >Expense Details</a
-          >
+            <p
+              class="dropdown-toggle"
+              id="dropdownMenuButton2"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Payment
+            </p>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+              <li><a class="dropdown-item" href="./credit.html">Credit</a></li>
+
+              <li><a class="dropdown-item" href="./debit.html">Debit</a></li>
+            </ul>
+          </div>
           <a
             href="#"
             class="
@@ -156,21 +109,21 @@
                   <a
                     class="nav-link fs-6 text-wrap bg-warning me-2 rounded-3"
                     aria-current="page"
-                    href="./index.html"
+                    href="../index.html"
                     ><i class="fas fa-brain me-2"></i>Master</a
                   >
                 </li>
                 <li class="nav-item mb-1">
                   <a
                     class="nav-link fs-6 text-wrap bg-warning me-2 rounded-3"
-                    href="./process/test.html"
+                    href="./test.html"
                     ><i class="fas fa-procedures me-2"></i>Process</a
                   >
                 </li>
                 <li class="nav-item mb-1">
                   <a
                     class="nav-link fs-6 text-wrap bg-warning me-2 rounded-3"
-                    href="./report.html"
+                    href="../report.html"
                     ><i class="fas fa-file-medical me-2"></i>Report</a
                   >
                 </li>
@@ -197,51 +150,42 @@
               align-items-center
             "
           >
-            <h4>Test Name</h4>
+            <h4>Debit</h4>
             <form class="bgform row g-3 p-2 rounded">
-              <div class="col-md-6">
-                <label for="testId" class="form-label">Test Id</label>
-                <input type="text" class="form-control" id="testId" />
+              <div class="col-md-4">
+                <label for="dPaymentId" class="form-label">D.Payment Id</label>
+                <input type="text" class="form-control" id="dPaymentId" />
               </div>
-              <div class="col-md-6">
+              <div class="col-md-4">
                 <label for="Date" class="form-label">Date</label>
-                <input type="date" class="form-control" id="Date" />
+                <input
+                  type="password"
+                  class="form-control"
+                  id="Date"
+                />
               </div>
+
+              
               <div class="col-md-6">
-                <label for="testHead" class="form-label">Test Head Name</label>
-                <select
-                  id="testHead"
-                  class="form-select form-select mb-3"
-                  aria-label=".form-select example"
-                >
-                  <option selected>Open</option>
-                  <option value="1">One</option>
-                  <option value="2">Two</option>
-                  <option value="3">Three</option>
+                <label for="dpaymentFor" class="form-label">D.Payment For</label>
+                <select id="dpaymentFor" class="form-select">
+                  <option selected>Choose...</option>
+                  <option>...</option>
                 </select>
               </div>
               <div class="col-md-6">
-                <label for="nameOfTest" class="form-label"
-                  >Name of the Test</label
-                >
-                <input type="text" class="form-control" id="nameOfTest" />
+                <label for="testId" class="form-label">Test Id</label>
+                <select id="testId" class="form-select">
+                  <option selected>Choose...</option>
+                  <option>...</option>
+                </select>
               </div>
-              <div class="col-md-4">
-                <label for="minValue" class="form-label">Minimum Value</label>
-                <input type="text" class="form-control" id="minValue" />
-              </div>
-              <div class="col-md-4">
-                <label for="maxValue" class="form-label">Maximum Value</label>
-                <input type="text" class="form-control" id="maxValue" />
-              </div>
-              <div class="col-md-4">
-                <label for="normalValue" class="form-label">Normal Value</label>
-                <input type="text" class="form-control" id="normalValue" />
-              </div>
+    
               <div class="col-md-12">
-                <label for="reMarks" class="form-label">Remarks</label>
-                <input type="text" class="form-control" id="reMarks" />
-              </div>
+                <label for="totalAmount" class="form-label">Paid Amount</label>
+                <input type="text" class="form-control" id="totalAmount" />
+              </div>              
+              
               <div class="col-12">
                 <button type="submit" class="btn btn-primary">Submit</button>
               </div>
@@ -341,8 +285,8 @@
     </div>
     <!-- /#page-content-wrapper -->
 
-    <script src="./js/bootstrap.bundle.min.js"></script>
-    <script src="./js/all.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/all.js"></script>
     <script>
       var el = document.getElementById("wrapper");
       var toggleButton = document.getElementById("menu-toggle");

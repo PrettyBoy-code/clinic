@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="./css/bootstrap.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="./css/all.min.css" />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link href="../css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/all.min.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
     <title>Process</title>
   </head>
 
@@ -29,14 +29,14 @@
         </div>
         <div class="list-group list-group-flush my-3">
           <a
-            href="#"
+            href="./test.html"
             class="
               list-group-item list-group-item-action
               bg-transparent
               second-text
               fw-bold
             "
-            >Test</a
+            >Test Entry</a
           >
           <a
             href="#"
@@ -66,9 +66,9 @@
               Payment
             </p>
             <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
-              <li><a class="dropdown-item" href="#">Credit</a></li>
+              <li><a class="dropdown-item" href="./credit.html">Credit</a></li>
 
-              <li><a class="dropdown-item" href="#">Debit</a></li>
+              <li><a class="dropdown-item" href="./debit.html">Debit</a></li>
             </ul>
           </div>
           <a
@@ -109,21 +109,21 @@
                   <a
                     class="nav-link fs-6 text-wrap bg-warning me-2 rounded-3"
                     aria-current="page"
-                    href="./index.html"
+                    href="../index.html"
                     ><i class="fas fa-brain me-2"></i>Master</a
                   >
                 </li>
                 <li class="nav-item mb-1">
                   <a
                     class="nav-link fs-6 text-wrap bg-warning me-2 rounded-3"
-                    href="./process.html"
+                    href="./test.html"
                     ><i class="fas fa-procedures me-2"></i>Process</a
                   >
                 </li>
                 <li class="nav-item mb-1">
                   <a
                     class="nav-link fs-6 text-wrap bg-warning me-2 rounded-3"
-                    href="./report.html"
+                    href="../report.html"
                     ><i class="fas fa-file-medical me-2"></i>Report</a
                   >
                 </li>
@@ -150,67 +150,147 @@
               align-items-center
             "
           >
-            <h4>Registration</h4>
+            <h4>Test Entry</h4>
             <form class="bgform row g-3 p-2 rounded">
-              <div class="col-md-6">
-                <label for="inputEmail4" class="form-label">Email</label>
-                <input type="email" class="form-control" id="inputEmail4" />
-              </div>
-              <div class="col-md-6">
-                <label for="inputPassword4" class="form-label">Password</label>
-                <input
-                  type="password"
-                  class="form-control"
-                  id="inputPassword4"
-                />
-              </div>
-              <div class="col-12">
-                <label for="inputAddress" class="form-label">Address</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="inputAddress"
-                  placeholder="1234 Main St"
-                />
-              </div>
-              <div class="col-12">
-                <label for="inputAddress2" class="form-label">Address 2</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="inputAddress2"
-                  placeholder="Apartment, studio, or floor"
-                />
-              </div>
-              <div class="col-md-6">
-                <label for="inputCity" class="form-label">City</label>
-                <input type="text" class="form-control" id="inputCity" />
+              <div class="col-md-4">
+                <label for="testEntryId" class="form-label">Test Entry Id</label>
+                <input type="text" class="form-control" id="testEntryId" />
               </div>
               <div class="col-md-4">
-                <label for="inputState" class="form-label">State</label>
-                <select id="inputState" class="form-select">
+                <label for="Date" class="form-label">Date</label>
+                <input
+                  type="date"
+                  class="form-control"
+                  id="Date"
+                />
+              </div>
+              <div class="col-md-4">
+                <label for="Time" class="form-label">Time</label>
+                <input
+                  type="time"
+                  class="form-control"
+                  id="Time"
+                />
+              </div>
+              
+              <div class="col-md-6">
+                <label for="testHeadName" class="form-label">Test Head Name</label>
+                <select id="testHeadName" class="form-select">
                   <option selected>Choose...</option>
                   <option>...</option>
                 </select>
               </div>
-              <div class="col-md-2">
-                <label for="inputZip" class="form-label">Zip</label>
-                <input type="text" class="form-control" id="inputZip" />
+              <div class="col-md-6">
+                <label for="testName" class="form-label">Test Name</label>
+                <select id="testName" class="form-select">
+                  <option selected>Choose...</option>
+                  <option>...</option>
+                </select>
               </div>
               <div class="col-12">
                 <div class="form-check">
                   <input
                     class="form-check-input"
                     type="checkbox"
-                    id="gridCheck"
+                    id="vendorClinicCheckbox"
                   />
-                  <label class="form-check-label" for="gridCheck">
-                    Check me out
+                  <label class="form-check-label" for="vendorClinicCheckbox">
+                    Vendor Clinic
                   </label>
                 </div>
               </div>
+              <div class="col-md-6 " id="clinicIdBox">
+                <label for="clinicId" class="form-label">Clinic Id</label>
+                <select id="clinicId" class="form-select">
+                  <option selected>Choose...</option>
+                  <option>...</option>
+                </select>
+              </div>
+              <div class="col-md-6 " id="clinicNameBox">
+                <label for="clinicName" class="form-label">Clinic Name</label>
+                <select id="clinicName" class="form-select">
+                  <option selected>Choose...</option>
+                  <option>...</option>
+                </select>
+              </div>
+
+              
+              <div class="col-4">
+                <label for="totalAmount" class="form-label">Total Amount</label>
+                <input type="text" class="form-control" id="totalAmount" />
+              </div>
+
+              <div class="col-md-4">
+                <label for="totalAmount" class="form-label">Paid Amount</label>
+                <input type="text" class="form-control" id="totalAmount" />
+              </div>
+
+              <div class="col-md-1 position-relative">
+                <p class="position-absolute top-50">Or</p>
+              </div>
+              
+              <div class="col-md-2 position-relative">
+                <div class="position-absolute top-50" >
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="estimateCheckbox"
+                  />
+                  <label class="form-check-label" for="estimateCheckbox">
+                    Estimate
+                  </label>
+                </div>
+              </div>
+              <div class="col-md-12">
+                <label for="totalAmount" class="form-label">Remaining Amount</label>
+                <input type="text" class="form-control" id="totalAmount" />
+              </div>
+              <div class="col-md-12">
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="paidCheckbox"
+                  />
+                  <label class="form-check-label" for="paidCheckbox">
+                    Print
+                  </label>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <label  class="form-label">Test Process</label>  
+              </div>
+              <div class="col-md-6">
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="outsideLabCheckbox"
+                  />
+                  <label class="form-check-label" for="outsideLabCheckbox">
+                    Outside Lab
+                  </label>
+                </div>
+              </div>
+
+              <div class="col-md-6" id="outsideLabBox">
+                <label for="outsideLab" class="form-label">Outside Lab Name</label>
+                <select id="outsideLab" class="form-select">
+                  <option selected>Choose...</option>
+                  <option>...</option>
+                </select>
+              </div>
+              <div class="col-md-6" id="ousideLabIdBox">
+                <label for="ousideLabId" class="form-label">Outside Lab Id</label>
+                <select id="ousideLabId" class="form-select">
+                  <option selected>Choose...</option>
+                  <option>...</option>
+                </select>
+              </div>
+              
+              
               <div class="col-12">
-                <button type="submit" class="btn btn-primary">Sign in</button>
+                <button type="submit" class="btn btn-primary">Submit</button>
               </div>
             </form>
           </div>
@@ -306,10 +386,11 @@
         </div>
       </div>
     </div>
+    <script src="../js/test.js"></script>
     <!-- /#page-content-wrapper -->
 
-    <script src="./js/bootstrap.bundle.min.js"></script>
-    <script src="./js/all.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/all.js"></script>
     <script>
       var el = document.getElementById("wrapper");
       var toggleButton = document.getElementById("menu-toggle");
