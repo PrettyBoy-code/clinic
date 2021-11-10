@@ -86,7 +86,7 @@
               second-text
               fw-bold
             "
-            >Outlet Lab Details</a
+            >Outside Lab Details</a
           >
           <a
             href="./employeeDetails.html"
@@ -139,19 +139,9 @@
               ><i class="fas fa-align-left primary-text fs-4 me-3"></i
             ></a>
 
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarText"
-              aria-controls="navbarText"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarText">
-              <ul class="navbar-nav text-center fw-bold me-auto mb-2 mb-lg-0">
+            
+            <div  id="navbarText">
+              <ul class=" custom-ul navbar-nav text-center fw-bold me-auto mb-2 mb-lg-0">
                 <li class="nav-item mb-1">
                   <a
                     class="nav-link fs-6 text-wrap bg-warning me-2 rounded-3"
@@ -163,7 +153,7 @@
                 <li class="nav-item mb-1">
                   <a
                     class="nav-link fs-6 text-wrap bg-warning me-2 rounded-3"
-                    href="../process.html"
+                    href="../process/test.html"
                     ><i class="fas fa-procedures me-2"></i>Process</a
                   >
                 </li>
@@ -334,6 +324,24 @@
       </div>
     </div>
     <!-- /#page-content-wrapper -->
+    <div class="tab-container fw-bold">
+      <div class="tab master">
+        <i class="fas fa-brain text-primary"></i><br />
+        <a aria-current="page" href="../index.html">Master</a>
+      </div>
+      <div class="tab process">
+        <i class="fas fa-procedures text-danger"></i><br />
+        <a href="../process/test.html">Process</a>
+      </div>
+      <div class="tab report">
+        <i class="fas fa-file-medical text-warning"></i><br />
+        <a href="../report.html">Report</a>
+      </div>
+      <div class="tab settings">
+        <i class="fas fa-tools text-success"></i><br />
+        <a href="#">Settings</a>
+      </div>
+    </div>
 
     <script src="../js/bootstrap.bundle.min.js"></script>
     <script src="../js/all.js"></script>
