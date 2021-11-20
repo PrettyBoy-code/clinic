@@ -1,7 +1,7 @@
 var vendorClinicCheckbox = document.getElementById("vendorClinicCheckbox");
 var clinicIdBox = document.getElementById("clinicIdBox");
 var clinicNameBox = document.getElementById("clinicNameBox");
-var clinicTable = document.getElementById("clinicTable");
+
 
 var outsideLabCheckbox = document.getElementById("outsideLabCheckbox");
 var outsideLabBox = document.getElementById("outsideLabBox");
@@ -9,7 +9,7 @@ var ousideLabIdBox = document.getElementById("ousideLabIdBox");
 
 clinicIdBox.style.display = "none";
 clinicNameBox.style.display = "none";
-clinicTable.style.display = "none";
+
 
 outsideLabBox.style.display = "none";
 ousideLabIdBox.style.display = "none";
@@ -19,11 +19,11 @@ function vendorHidden() {
   if (vendorClinicCheckbox.checked == true) {
     clinicIdBox.style.display = "block";
     clinicNameBox.style.display = "block";
-    clinicTable.style.display = "block";
+   
   } else {
     clinicIdBox.style.display = "none";
     clinicNameBox.style.display = "none";
-    clinicTable.style.display = "none";
+    
   }
 }
 

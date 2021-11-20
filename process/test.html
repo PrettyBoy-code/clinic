@@ -143,6 +143,22 @@
             <h4>Test Entry</h4>
             <form class="bgform row g-3 p-2 rounded">
               <div class="col-md-4">
+                <label for="patientName" class="form-label">Patient Name</label>
+                <input type="text" class="form-control" id="paitentName" />
+              </div>
+              <div class="col-md-4">
+                <label for="patientGender" class="form-label">Gender</label>
+                <select id="patientGender" class="form-select">
+                  <option selected>Male</option>
+                  <option>Female</option>
+                  <option>Other</option>
+                </select>
+              </div>
+              <div class="col-md-4">
+                <label for="patientAge" class="form-label">Age</label>
+                <input type="number" class="form-control" id="patientAge" />
+              </div>
+              <div class="col-md-4">
                 <label for="testEntryId" class="form-label">Test Entry Id</label>
                 <input type="text" class="form-control" id="testEntryId" />
               </div>
@@ -178,33 +194,6 @@
                 </select>
               </div>
               <div class="col-12">
-                <div class="form-check">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    id="vendorClinicCheckbox"
-                  />
-                  <label class="form-check-label" for="vendorClinicCheckbox">
-                    Vendor Clinic
-                  </label>
-                </div>
-              </div>
-              <div class="col-md-6 " id="clinicIdBox">
-                <label for="clinicId" class="form-label">Clinic Id</label>
-                <select id="clinicId" class="form-select">
-                  <option selected>Choose...</option>
-                  <option>...</option>
-                </select>
-              </div>
-              <div class="col-md-6 " id="clinicNameBox">
-                <label for="clinicName" class="form-label">Clinic Name</label>
-                <select id="clinicName" class="form-select">
-                  <option selected>Choose...</option>
-                  <option>...</option>
-                </select>
-              </div>
-
-              <div class="col-12" id="clinicTable">
                 <table class="table">
                   <thead>
                     <tr>
@@ -240,6 +229,34 @@
                   </tbody>
                 </table>
               </div>
+              <div class="col-12">
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="vendorClinicCheckbox"
+                  />
+                  <label class="form-check-label" for="vendorClinicCheckbox">
+                    Vendor Clinic
+                  </label>
+                </div>
+              </div>
+              <div class="col-md-6 bg-success p-2 rounded-start " id="clinicIdBox">
+                <label for="clinicId" class="form-label">Clinic Id</label>
+                <select id="clinicId" class="form-select">
+                  <option selected>Choose...</option>
+                  <option>...</option>
+                </select>
+              </div>
+              <div class="col-md-6 bg-success p-2  rounded-end" id="clinicNameBox">
+                <label for="clinicName" class="form-label">Clinic Name</label>
+                <select id="clinicName" class="form-select">
+                  <option selected>Choose...</option>
+                  <option>...</option>
+                </select>
+              </div>
+
+              
 
               
               <div class="col-4">
